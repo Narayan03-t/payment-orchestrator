@@ -1,3 +1,4 @@
+import API_URL from '../config';
 import { useState } from "react";
 
 const paymentMethods = ["UPI", "CARD", "NETBANKING"];
@@ -26,7 +27,7 @@ function PaymentForm() {
         requestBody.transactionId = transactionId.trim();
       }
 
-      const response = await fetch("/api/pay", {
+      const response = await fetch("${API_URL}/api/pay", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

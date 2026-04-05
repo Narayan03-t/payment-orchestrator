@@ -1,3 +1,4 @@
+import API_URL from '../config';
 import { useEffect, useState } from "react";
 
 const defaultGateways = ["GatewayA", "GatewayB", "GatewayC"];
@@ -10,7 +11,7 @@ function GatewayStats() {
   useEffect(() => {
     const loadGatewayStats = async () => {
       try {
-        const response = await fetch("/api/gateways");
+        const response = await fetch("${API_URL}/api/gateways");
         const data = await response.json();
 
         if (!response.ok) {

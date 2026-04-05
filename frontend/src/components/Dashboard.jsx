@@ -1,3 +1,4 @@
+import API_URL from '../config';
 import { useEffect, useState } from "react";
 import {
   Bar,
@@ -47,8 +48,8 @@ function Dashboard() {
     const loadDashboardData = async () => {
       try {
         const [transactionsResponse, gatewaysResponse] = await Promise.all([
-          fetch("/api/transactions"),
-          fetch("/api/gateways"),
+          fetch("${API_URL}/api/transactions"),
+          fetch("${API_URL}/api/gateways"),
         ]);
 
         const transactionsData = await transactionsResponse.json();
