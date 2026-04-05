@@ -347,4 +347,4 @@ This system is intentionally small, but the architecture reflects real payment-p
 - protective controls
 - learning from historical gateway behavior
 
-That is what makes payment orchestration interesting and why the project is directly relevant to companies like Juspay.
+That is what makes payment orchestration interesting and why the project is directly relevant to modern payment platforms.
