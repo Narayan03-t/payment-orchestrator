@@ -79,7 +79,7 @@ For a recruiter or engineer at Juspay, this demonstrates backend fundamentals, A
 
 ### Database
 
-- MongoDB Local: `mongodb://localhost:27017/payment_db`
+- MongoDB Local: `MongoDB Atlas (cloud) — add your MONGO_URI in .env file`
 
 ## Folder Structure
 
@@ -105,7 +105,8 @@ payment-orchestrator/
 ### 1. Clone or open the project
 
 ```powershell
-cd C:\Users\Guddu\OneDrive\Documents\Playground\payment-orchestrator
+git clone https://github.com/Narayan03-t/payment-orchestrator.git
+cd payment-orchestrator
 ```
 
 ### 2. Install backend dependencies
@@ -127,7 +128,7 @@ cd ..
 The app expects:
 
 ```text
-mongodb://localhost:27017/payment_db
+MongoDB Atlas (cloud) — add your MONGO_URI in .env file
 ```
 
 ### 5. Seed default gateways
