@@ -13,7 +13,7 @@ This project models the kind of engineering tradeoffs that matter in real paymen
 - protecting APIs with rate limiting
 - exposing live operational analytics
 
-For a recruiter or engineer at Juspay, this demonstrates backend fundamentals, API design, data modeling, resilience thinking, observability, and product polish in one project.
+For any recruiter or engineer in the fintech space, this demonstrates backend fundamentals, API design, data modeling, resilience thinking, observability, and product polish in one project.
 
 ## System Design
 
@@ -271,10 +271,9 @@ The React frontend includes:
 
 These are the kinds of non-functional details that make a backend feel production-aware instead of toy-like.
 
-## Why This Project Is Relevant to Juspay
+why the project is directly relevant to modern payment platforms
 
-Juspay operates in the payment orchestration and checkout infrastructure space. This project maps directly to several important payment-system concerns:
-
+Modern payment platforms operate in the payment orchestration and checkout infrastructure space. This project maps directly to several important payment-system concerns:
 - routing payments across multiple gateways
 - using fallback logic when a gateway fails
 - measuring gateway quality with success rate and latency
