@@ -27,7 +27,7 @@ function PaymentForm() {
         requestBody.transactionId = transactionId.trim();
       }
 
-      const response = await fetch("${API_URL}/api/pay", {
+      const response = await fetch(`${API_URL}/api/pay`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

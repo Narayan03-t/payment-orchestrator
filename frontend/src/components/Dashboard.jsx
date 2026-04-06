@@ -48,8 +48,8 @@ function Dashboard() {
     const loadDashboardData = async () => {
       try {
         const [transactionsResponse, gatewaysResponse] = await Promise.all([
-          fetch("${API_URL}/api/transactions"),
-          fetch("${API_URL}/api/gateways"),
+          fetch(`${API_URL}/api/transactions`),
+          fetch(`${API_URL}/api/gateways`),
         ]);
 
         const transactionsData = await transactionsResponse.json();
