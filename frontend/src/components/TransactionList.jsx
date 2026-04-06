@@ -1,4 +1,3 @@
-import API_URL from '../config';
 import { useEffect, useState } from "react";
 
 const filters = [
@@ -21,7 +20,7 @@ function TransactionList() {
       try {
         const query =
           activeFilter === "ALL" ? "" : `?status=${encodeURIComponent(activeFilter)}`;
-        const response = await fetch(`${API_URL}${API_URL}/api/transactions${query}`);
+        const response = await fetch(`/api/transactions${query}`);
         const data = await response.json();
 
         if (!response.ok) {
